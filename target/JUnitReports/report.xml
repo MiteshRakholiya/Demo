@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="16.105">
+    <testcase classname="feature to test login functionality" name="Check login is successful with valid credentials" time="15.986">
+        <failure message="Unable to locate element: *[name='password']&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.2.2', revision: '683ccb65d6'&#10;System info: host: 'DESKTOP-D66SVPI', ip: '12.12.0.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [119bc950-3a52-4b3e-95a2-a62f17ccc18c, findElement {using=name, value=password}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0.1, moz:accessibilityChecks: false, moz:buildID: 20220608170832, moz:debuggerAddress: localhost:65380, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 21484, moz:profile: C:\Users\MITESH~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:65380/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 119bc950-3a52-4b3e-95a2-a62f17ccc18c" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Browser is open.......................................................passed
+Given User is on login page.................................................passed
+When User enters username and passoword.....................................failed
+Then user is navigate to the inbox page.....................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name='password']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'DESKTOP-D66SVPI', ip: '12.12.0.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [119bc950-3a52-4b3e-95a2-a62f17ccc18c, findElement {using=name, value=password}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0.1, moz:accessibilityChecks: false, moz:buildID: 20220608170832, moz:debuggerAddress: localhost:65380, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 21484, moz:profile: C:\Users\MITESH~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:65380/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 119bc950-3a52-4b3e-95a2-a62f17ccc18c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
+	at Definitions.LoginSteps.user_enters_username_and_passoword(LoginSteps.java:48)
+	at ✽.User enters username and passoword(file:///D:/PersonalEclipse/GmailCucumber/src/test/resources/Features/Login.feature:9)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
